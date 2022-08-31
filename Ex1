@@ -1,0 +1,52 @@
+'''Classe Bola: Crie uma classe que modele uma bola:
+Atributos: Cor, circunferência, material
+Métodos: trocaCor e mostraCor
+'''
+
+CLASS: 
+
+class bola:
+    def __init__(self,cor,circuferencia,material):
+        self.cor = cor
+        self.circuferencia = circuferencia
+        self.material = material
+
+    def trocaCor(self,novaCor):
+        self.cor = novaCor
+    
+    def mostraCor(self):
+        print("A cor é:",self.cor)
+    
+    def novaCircuferencia(self,novaCircuferencia):
+        self.circuferencia = novaCircuferencia
+        
+    def mostraCircuferencia(self):
+        print("A circuferencia é:",self.circuferencia)
+        
+    def novoMaterial(self,novoMaterial):
+        self.material = novoMaterial
+        
+    def mostraMaterial(self):
+        print("O material é:",self.material)
+  
+ MAIN: 
+ 
+ from CLASS.BOLA.bola import bola
+
+
+
+c = input("Digite a cor:")
+c.mostraCor()
+c = input("Digite a nova cor:")
+c.mostraCor()
+
+ci = float(input("Digite a circuferencia:"))
+ci.mostraCircuferencia()
+ci = float(input("Digite a nova Circuferencia:"))
+ci.mostraCircuferencia()
+
+m = input("Digite o material:")
+m.mostraMaterial()
+m = input("Digite o novoMaterial:")
+m.mostraMaterial()
+        
